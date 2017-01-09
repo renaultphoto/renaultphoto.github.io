@@ -153,12 +153,12 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/01/01/hello-world/">Hexo搭建的小站</a>
+      <a class="article-title" href="/2017/01/01/hello-world.html/">Hexo搭建的小站</a>
     </h1>
   
 
         
-        <a href="/2017/01/01/hello-world/" class="archive-article-date">
+        <a href="/2017/01/01/hello-world.html/" class="archive-article-date">
   	<time datetime="2017-01-01T15:05:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-01</time>
 </a>
         
@@ -167,9 +167,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>在新年的第一天，看见同学<a href="https://glede.me/" target="_blank" rel="external">邓沁</a>把他的小站建起来，想起自己之前一直有想建个自己的网站，就能写点自己的读书笔记或者自己开发过程中遇到的一点问题，来记录自己的生活。看了看hexo，发现也不是很难，于是就跟风似的开启了建站之旅，也算是2017年第一个小进步。</p>
-<p>##准备工作</p>
-<p>###需要的环境</p>
-<blockquote>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><h3 id="需要的环境"><a href="#需要的环境" class="headerlink" title="需要的环境"></a>需要的环境</h3><blockquote>
 <ul>
 <li>Node.js  <a href="https://nodejs.org/en/" target="_blank" rel="external">官网</a> //生成静态页面</li>
 <li>Git  <a href="https://git-for-windows.github.io/" target="_blank" rel="external">官网</a> //把本地的静态文件上传到Github的工具</li>
@@ -177,9 +175,7 @@
 </ul>
 </blockquote>
 <p>将这<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>、<a href="https://git-for-windows.github.io/" target="_blank" rel="external">Git</a>两个软件下载安装和在<a href="https://github.com/" target="_blank" rel="external">Github</a>上创建repositories 就不讲了，网上教程太多。要学会自己搜索自己想要的东西^_^</p>
-<p>##开始搭建</p>
-<p>###创建页面文件</p>
-<p>选择一个路径创建你的blog文件夹，例如我的 <code>C:\hexo\renaultblog</code></p>
+<h2 id="开始搭建"><a href="#开始搭建" class="headerlink" title="开始搭建"></a>开始搭建</h2><h3 id="创建页面文件"><a href="#创建页面文件" class="headerlink" title="创建页面文件"></a>创建页面文件</h3><p>选择一个路径创建你的blog文件夹，例如我的 <code>C:\hexo\renaultblog</code></p>
 <p>右键点击鼠标会有<code>Git Bash Here</code>点击之后，执行如下命令安装HEXO</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div></pre></td></tr></table></figure>
 <p>初始化文件</p>
@@ -202,8 +198,7 @@
 <p>然后启动本地服务</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 <p>在你的浏览器中输入<a href="http://localhost:4000，就能访问你的主页了。" target="_blank" rel="external">http://localhost:4000，就能访问你的主页了。</a><br>参考    <a href="http://hexo.io/hexo-theme-landscape" target="_blank" rel="external">landscape主题</a></p>
-<p>###部署到Github</p>
-<p>1、配置git</p>
+<h3 id="部署到Github"><a href="#部署到Github" class="headerlink" title="部署到Github"></a>部署到Github</h3><p>1、配置git</p>
 <p>//以下所有涉及邮箱的 <code>renault@renault.com&#39;</code>请改成你自己的邮箱</p>
 <p>//设置自己的用户名(有空格)</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name &quot;renault@renault.com&quot;</div></pre></td></tr></table></figure>
@@ -226,7 +221,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>出现如下提示就成功了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">INFO  Deploying: git</div><div class="line">INFO  Clearing .deploy_git folder...</div><div class="line">INFO  Copying files from public folder...</div><div class="line">[master 79a5c8f] Site updated: 2017-01-08 00:04:59</div><div class="line"> 7 files changed, 29 insertions(+), 29 deletions(-)</div><div class="line"> rewrite content.json (100%)</div><div class="line">Branch master set up to track remote branch master from git@github.com:renaultphoto/renaultphoto.github.io.git.</div><div class="line">To git@github.com:renaultphoto/renaultphoto.github.io.git</div><div class="line">   af6bd3c..79a5c8f  HEAD -&gt; master</div><div class="line">INFO  Deploy done: git</div></pre></td></tr></table></figure></p>
 <p>最后的最后访问你创建的<code>repositories</code>，有个<code>setting</code>,找到Github pages ,它会告诉你访问你博客的路径。比如 <code>Your site is published at http://renaultphoto.com/</code>。</p>
-<p>###参考<br><a href="http://opiece.me/2015/04/09/hexo-guide/" target="_blank" rel="external">使用Hexo搭建个人博客(基于hexo3.0)</a></p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="http://opiece.me/2015/04/09/hexo-guide/" target="_blank" rel="external">使用Hexo搭建个人博客(基于hexo3.0)</a></p>
 <p><a href="http://hexo.io" target="_blank" rel="external">Hexo官网</a></p>
 <h2 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h2><p>第一次写教程，还有很多不完善的地方。请大家多多包涵，有什么问题在下方留言，我会尽快回复的。</p>
 
@@ -252,7 +247,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/01/01/hello-world/">阅读全文 >></a>
+          <a class="article-more-a" href="/2017/01/01/hello-world.html/">阅读全文 >></a>
         </p>
       
 
